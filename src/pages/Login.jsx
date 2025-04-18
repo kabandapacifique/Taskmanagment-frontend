@@ -66,7 +66,7 @@ const Login = () => {
   
   return (
     <div className="max-w-md mx-auto">
-      <h1 className="text-3xl font-bold text-center text-gray-800 mb-6">Log In</h1>
+      <h1 className="text-3xl font-bold text-center text-green-600 mb-6">Log In</h1>
       
       <div className="bg-white rounded-lg shadow-md p-8">
         <form onSubmit={handleSubmit}>
@@ -83,7 +83,7 @@ const Login = () => {
               name="email"
               value={formData.email}
               onChange={handleChange}
-              className={`w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 ${
+              className={`w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 ${
                 formErrors.email ? 'border-red-500' : 'border-gray-300'
               }`}
               placeholder="Enter your email"
@@ -106,7 +106,7 @@ const Login = () => {
               name="password"
               value={formData.password}
               onChange={handleChange}
-              className={`w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-indigo-500 ${
+              className={`w-full px-4 py-2 border rounded-md focus:outline-none focus:ring-2 focus:ring-green-500 ${
                 formErrors.password ? 'border-red-500' : 'border-gray-300'
               }`}
               placeholder="Enter your password"
@@ -120,7 +120,7 @@ const Login = () => {
             <button
               type="submit"
               disabled={submitting}
-              className="w-full bg-indigo-600 hover:bg-indigo-700 text-white py-2 px-4 rounded-md transition-colors disabled:opacity-75"
+              className="w-full bg-green-600 hover:bg-gray-700 text-white py-2 px-4 rounded-md transition-colors disabled:opacity-75"
             >
               {submitting ? 'Logging in...' : 'Log In'}
             </button>
@@ -128,7 +128,7 @@ const Login = () => {
           
           <div className="text-center text-gray-600">
             Don't have an account?{' '}
-            <Link to="/register" className="text-indigo-600 hover:text-indigo-800">
+            <Link to="/register" className="text-green-600 hover:text-gray-800">
               Register
             </Link>
           </div>

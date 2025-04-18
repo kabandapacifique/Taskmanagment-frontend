@@ -71,7 +71,7 @@ export const AuthProvider = ({ children }) => {
   };
 
   const value = {
-    currentUser,
+    currentUser,  
     loading,
     register,
     login,
